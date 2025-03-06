@@ -491,7 +491,7 @@ nav a:hover {
     border: none;
     cursor: pointer;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 30px;
     background-image: var(--button-gradient);
     color: white;
     transition: all 0.3s ease;
@@ -1234,7 +1234,7 @@ footer {
     justify-content: flex-end;
     align-content: flex-start;
     background-color: rgba(45, 45, 45, 0.9);
-    border-radius: 8px;
+    border-radius: 30px;
     padding: 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 100%;
@@ -1267,7 +1267,7 @@ footer {
 .project-image {
     margin-right: 20px;
     height: 300px;
-    border-radius: 8px;
+    border-radius: 30px;
 }
 
 
@@ -1337,3 +1337,67 @@ a:visited {
     margin-bottom: 25px;
     margin-top: 25px;
 }
+
+
+
+#aboutme h2 {
+    text-align: left; /* Left align on desktop */
+}
+
+/* Center it on mobile screens */
+@media (max-width: 768px) {
+    #aboutme h2 {
+        text-align: center !important; /* Force center alignment on smaller screens */
+    }
+}
+
+
+.skills-box {
+    background-color: rgba(45, 45, 45, 0.9); /* Match other sections */
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+/* Hover Effect */
+.skills-box:hover {
+    transform: translateY(-5px); /* Moves box slightly up */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Adds hover shadow effect */
+}
+
+
+
+/* Default (Desktop) Styles */
+.timeline-content h3 {
+    font-size: 1.5rem; /* Standard size */
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left; /* Ensures left alignment */
+    word-break: break-word; /* Prevents text overflow */
+}
+
+/* Adjust for tablets and smaller screens */
+@media (max-width: 1024px) {
+    .timeline-content h3 {
+        font-size: 1.3rem; /* Slightly smaller */
+    }
+}
+
+/* Adjust for mobile and very small screens */
+@media (max-width: 768px) {
+    .timeline-content h3 {
+        font-size: 1.1rem; /* Smaller font size */
+        line-height: 1.4; /* Adds spacing between lines */
+    }
+}
+
+/* Ensures text remains left-aligned on all screen sizes */
+@media (max-width: 480px) {
+    .timeline-content h3 {
+        font-size: 1rem; /* Even smaller for very small screens */
+    }
+}
+
