@@ -443,7 +443,24 @@ Version 6.1.1 → A small fix or improvement without adding new features
         <button class="tab-button active" data-tab="experience-tab">Experience</button>
         <button class="tab-button" data-tab="education-tab">Education</button>
       </div>
-      
+
+        
+
+    <style>
+        /* Media query for phones */
+        @media (max-width: 600px) {
+          /* This targets all images within timeline content */
+          .timeline-content img {
+            margin: 20px 5px 30px 10px !important; /* uniform margin for mobile; !important to override inline styles */
+            display: block;
+          }
+        }
+      </style>
+
+
+        
+
+        
       <!-- Tab Panels -->
       <div class="tab-content">
         <!-- Experience Tab -->
