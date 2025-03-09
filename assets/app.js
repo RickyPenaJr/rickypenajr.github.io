@@ -24,13 +24,18 @@ function initializeMobileMenu() {
         mobileMenuButton.classList.toggle('active');
     });
 
-    // Close mobile menu when clicking links
-    nav.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            nav.classList.remove('active');
-            mobileMenuButton.classList.remove('active');
-        });
+// Close mobile menu when clicking links
+nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active');
+        mobileMenuButton.classList.remove('active');
+        // Allow the smooth scroll to settle, then trigger a scroll event
+        setTimeout(() => {
+            window.dispatchEvent(new Event('scroll'));
+        }, 300); // adjust delay as needed
     });
+});
+
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
@@ -93,10 +98,16 @@ function initializeCertificates() {
     if (!loadMoreBtn) return;
 
     loadMoreBtn.addEventListener('click', () => {
-        document.getElementById('more-certificates')?.classList.toggle('hidden');
+        const moreCertificates = document.getElementById('more-certificates');
+        if (moreCertificates) {
+            moreCertificates.classList.toggle('hidden');
+        }
         loadMoreBtn.style.display = 'none';
+        // Trigger a scroll event to force recalculation of the active section
+        window.dispatchEvent(new Event('scroll'));
     });
 }
+
 
 // Email Copy Functionality
 function copyEmail() {
@@ -124,15 +135,32 @@ function initializeNavigation() {
     if (!header) return;
 
     function updateActiveSection() {
-        const scrollPosition = window.scrollY + header.offsetHeight + 50;
+        // Disable highlighting on mobile (adjust the threshold as needed)
+        if (window.innerWidth < 768) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            return;
+        }
 
+        const headerHeight = header.offsetHeight; // recalc every scroll
+        const tolerance = 40; // adjust as needed
+        const scrollPosition = window.scrollY + headerHeight - tolerance;
+    
         sections.forEach(section => {
             const id = section.getAttribute('id');
             if (!id) return;
-
-            const sectionTop = section.offsetTop;
-            const sectionBottom = sectionTop + section.offsetHeight;
-
+    
+            const rect = section.getBoundingClientRect();
+            let sectionTop = rect.top + window.scrollY;
+            let sectionBottom = sectionTop + rect.height;
+            
+            // Special handling for certificates section if needed
+            if (id === 'certificates') {
+                const moreCertificates = document.getElementById('more-certificates');
+                if (moreCertificates && moreCertificates.classList.contains('hidden')) {
+                    sectionBottom = sectionTop + Math.max(rect.height, 600);
+                }
+            }
+            
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                 navLinks.forEach(link => link.classList.remove('active'));
                 const activeLink = document.querySelector(`nav a[href="#${id}"]`);
@@ -140,10 +168,11 @@ function initializeNavigation() {
             }
         });
     }
-
+    
     window.addEventListener('scroll', updateActiveSection);
     updateActiveSection(); // Initial check
 }
+
 
 // Scroll Indicator
 function initializeScrollIndicator() {
