@@ -432,18 +432,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Prevents hash navigation issue and ensures smooth scrolling
     backToTopButton.addEventListener("click", function (event) {
-        event.preventDefault(); // Stop default anchor behavior
-        event.stopPropagation(); // Prevent bubbling
-        event.stopImmediatePropagation(); // Block interference from other scripts
+        event.preventDefault();
+        event.stopPropagation();
+        event.stopImmediatePropagation();
 
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
 
-        // 🚀 Only remove hash if it's "#top" (prevents interfering with other page navigation)
+        // 🚀 Fix: Temporarily change background & reset after 1 second
+        backToTopButton.style.backgroundColor = "#333"; // Darker color on click
+        setTimeout(() => {
+            backToTopButton.style.backgroundColor = "#000"; // Restore original
+        }, 1000);
+
+        // Only remove hash if it's "#top" (prevents interfering with navigation)
         if (window.location.hash === "#top") {
             history.replaceState(null, null, window.location.pathname);
         }
     });
 });
+
