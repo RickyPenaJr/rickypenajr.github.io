@@ -1,0 +1,1050 @@
+<!---------------------------
+Creator: Ricky Peña Jr.
+GitHub Account: (RickyPenaJr) 
+Purpose: Display Portfolio
+-----------------------------
+
+
+-----------------------------------------
+VERSION: 4.1.0 (Updated: March 09, 2025)
+-----------------------------------------
+
+
+-----------------------------------------------------------------------------------
+VERSION GUIDE EXAMPLE: 
+
+Version 6.0 → A major version with new core functionality or architecture changes.
+Version 6.1 → An update adding new features while keeping the core system the same.
+Version 6.1.1 → A small fix or improvement without adding new features
+-----------------------------------------------------------------------------------
+
+
+
+
+<! -----BEGINNING DOCUMENT----->
+
+
+
+
+
+<!-----BEGINNING DOCUMENT----->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Ricky Peña Jr.</title>
+    <link rel="icon" href="images/Logo.png" sizes="32x32">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+   
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+
+
+
+
+<!-- FAVICON LINK-->
+
+
+<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" sizes="192x192" href="favicon/favicon-192x192.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="favicon/favicon-512x512.png"/>
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+<link rel="shortcut icon" href="favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="MyWebSite" />
+<link rel="manifest" href="favicon/site.webmanifest" />
+
+
+  <link rel="stylesheet" href="np2.css" media="screen">
+<link rel="stylesheet" href="index.css" media="screen">
+  <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="np.js" defer=""></script>
+  <meta name="generator" content="Nicepage 7.0.3, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+
+
+
+
+
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+        
+        <!-- Header -->
+        <header id="header">
+            <div class="content">
+                <div class="inner">
+                    <h1>Ricky Peña Jr.</h1>
+					<h3>IT Consultant • Data Analyst</h3>
+					<p><i class="fas fa-map-marker-alt"></i> Houston, TX</p>
+					<br>
+					<button id="emailButton" onclick="copyEmail()">  <i class="fas fa-envelope"></i>&nbsp;Email</button>
+      <span id="copyMessage" style="display:none; color: green; margin-left: 10px;">&#10003; Email copied</span>
+                </div>
+            </div>
+
+			
+			<script>
+				function copyEmail() {
+				  const email = "rickypenajr@gmail.com";
+				  navigator.clipboard.writeText(email).then(() => {
+					const button = document.getElementById("emailButton");
+					const originalText = button.innerHTML;
+					button.innerHTML = "Email copied &#10003;";
+					setTimeout(() => {
+					  button.innerHTML = originalText;
+					}, 2000);
+				  }).catch(err => {
+					console.error("Error copying email:", err);
+				  });
+				}
+			  </script>
+
+
+            <nav>
+                <ul>
+                    <li><a href="#intro">About Me</a></li>
+                    <li><a href="#work">Experience</a></li>
+                    <li><a href="#about">Projects</a></li>
+                    <li><a href="#certifications">Certificates</a></li>
+                    <li><a href="pdfs/Ricardo_Pena_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="tel:+12819758340" class="fas fa-phone"></a></li>
+                    <!-- <li><a href="mailto:rickypenajr@gmail.com" target="_blank" class="fas fa-envelope"></a></li> -->
+                    <li><a href="https://www.linkedin.com/in/rickypenajr/" target="_blank" class="icon brands fa-linkedin"></a></li>
+                    <li><a href="https://github.com/rickypenajr" target="_blank" class="icon brands fa-github"></a></li>
+                    <!-- <li><a href="linkhere" target="_blank" class="icon fa-gem"></a></li> -->
+                </ul>
+            </div>
+        </header>
+
+
+
+
+
+
+
+
+		
+				<!----- MAIN ----->
+					<div id="main">
+
+
+
+
+						<!----- ABOUT ME ----->
+							<article id="intro">
+							<h2 class="major" id= "about-heading">About Me</h2>
+							<div style="text-align: center;">
+								<img src="images/headshot.jpg" alt="" width="65%" style="border-radius: 25px;" />
+							</div>
+							<br>
+
+
+							
+							<h3>Welcome</h3>
+							<!--<p><b>Welcome to My Portfolio!</b></p> ---> 
+
+							<p> I began my interest for Data Science while pursuing my undergrad in MIS & Finance at the University of Houston and through internship opportunities where I was able to apply it to real-world scenarios.</p>
+							<p> My MIS coursework provided technical expertise, while my Finance courses strengthen my analytical mindset—together, they blended perfectly towards Data Science, Business Intelligence, and Data Analytics.</p>
+							<p> I've created this portfolio to showcase my projects to others; If you've found yourself here, feel free to explore. &nbsp; 🚀</p>
+
+							<br>
+							<br>
+							<br>
+							<h3>Technical Skills</h3>
+							<p>My technical skills are a blend of programming languages, data analysis tools, and software applications that I have acquired through my coursework and internships.
+
+
+
+
+
+							<!-- Languages -->
+							<h4>Languages</h4>
+							<div class="skill-icons">
+								<div class="skill-icon" title="HTML5">
+								<i class="fab fa-html5"></i>
+								<span>HTML5</span>
+								</div>
+								<div class="skill-icon" title="CSS3">
+								<i class="fab fa-css3-alt"></i>
+								<span>CSS3</span>
+								</div>
+								<div class="skill-icon" title="JavaScript">
+								<i class="fab fa-js"></i>
+								<span>JavaScript</span>
+								</div>
+								<div class="skill-icon" title="Java">
+								<i class="fab fa-java"></i>
+								<span>Java</span>
+								</div>
+								<div class="skill-icon" title="Python">
+								<i class="fab fa-python"></i>
+								<span>Python</span>
+								</div>
+								<div class="skill-icon" title="R">
+								<i class="fab fa-r-project"></i>
+								<span>R</span>
+								</div>
+							</div>
+							
+							<!-- Tools -->
+							<h4>Tools</h4>
+							<div class="skill-icons">
+								<div class="skill-icon" title="Power BI">
+								<i class="fas fa-chart-line"></i>
+								<span>Power&nbsp;BI</span>
+								</div>
+								<div class="skill-icon" title="Tableau">
+								<i class="fas fa-chart-pie"></i>
+								<span>Tableau</span>
+								</div>
+								<div class="skill-icon" title="Google Colab">
+								<i class="fab fa-google"></i>
+								<span>Google Colab</span>
+								</div>
+								<div class="skill-icon" title="VS Code">
+								<i class="fas fa-code"></i>
+								<span>VS Code</span>
+								</div>
+								<div class="skill-icon" title="Jupyter Notebook">
+								<i class="fas fa-book"></i>
+								<span>Jupyter Notebook</span>
+								</div>
+								<div class="skill-icon" title="Visio">
+								<i class="fas fa-sitemap"></i>
+								<span>Visio</span>
+								</div>
+							</div>
+							
+							<!-- Libraries -->
+							<h4>Libraries</h4>
+							<div class="skill-icons">
+								<div class="skill-icon" title="Pandas">
+									<i class="fas fa-table" style="font-size:32px; color:#ffffff;"></i>
+									<span>Pandas</span>
+								</div>
+
+
+
+								<div class="skill-icon" title="Matplotlib">
+								<i class="fas fa-chart-bar"></i>
+								<span>Matplotlib</span>
+								</div>
+								<div class="skill-icon" title="NumPy">
+								<i class="fas fa-calculator"></i>
+								<span>NumPy</span>
+								</div>
+							</div>
+							
+							<!-- Databases -->
+							<h4>Databases</h4>
+							<div class="skill-icons">
+								<div class="skill-icon" title="MySQL">
+									<i class="fas fa-server" style="font-size:32px; color:#ffffff;"></i>
+									<span>MySQL</span>
+								</div>
+								
+								<div class="skill-icon" title="SQL">
+								<i class="fas fa-database"></i>
+								<span>SQL</span>
+								</div>
+								<div class="skill-icon" title="Microsoft Access">
+								<i class="fab fa-microsoft"></i>
+								<span>Access</span>
+
+
+
+								
+							</p>
+
+
+
+
+						</article>
+
+
+
+
+
+
+						<!-- Experience -->
+						<article id="work">
+							<h2 class="major">Experience</h2>
+
+
+							<!-- PROTIVTI-->
+							<div class="card">
+								<div class="container">
+									<br>
+									<img src="images/protiviti_logo.png" width=60%>
+									<br>
+									<font size="+3">IT Consulting Intern - <a href="https://www.protiviti.com/" target="_blank">Protiviti</a></font>
+									<p><b>June 2024 - Aug. 2024</b>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Houston, TX</p>
+									<p>During my internship at Protiviti, I gained hands-on experience testing controls, evaluating information systems, and reviewing SQL scripts, while also overseeing IT governance to ensure compliance. 
+										<br>
+										<br>
+										I worked with clients across the construction, energy, and oil & gas sectors in the Houston area.
+									</p>
+
+
+
+									<div class="tech-icons">
+										<div class="tech-icon break-label" data-label="IT / Data Assurance" title="IT Assurance">
+											<i class="fas fa-shield-alt"></i>
+										  </div>
+										<div class="tech-icon" data-label="SQL" title="SQL">
+										  <i class="fas fa-database"></i>
+										</div>
+										<div class="tech-icon" data-label="SAP" title="SAP">
+										  <img src="images/sap-logo.png" alt="SAP" style="width:55px; height:auto;">
+										</div>
+										<div class="tech-icon" data-label="Consulting" title="Consulting">
+										  <i class="fas fa-handshake"></i>
+										</div>
+									  </div>
+									  
+									  
+
+
+
+								</div>
+							</div>
+							<br>
+							
+
+							<!-- TENARIS-->
+							<div class="card">
+								<div class="container">
+									<br>
+									<img src="images/tenaris_logo.png" width=60%>
+									<br>
+									<font size="+3">Audit Data Science Intern - <a href="https://www.tenaris.com/" target="_blank">Tenaris</a></font>
+									<p><b>Jan. 2024 - July 2024</b>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Houston, TX</p>
+									<p>My internship at Tenaris was my most significant data science experience. I applied Python and its libraries to develop OCR technology and automate tasks with UiPath. 
+										<br>
+										<br>
+										Beyond basic analysis, I used R Studio and Jupyter Notebooks to perform comprehensive data audits and build solutions aimed at reducing fraud risk within various departments.
+									</p>
+
+
+									
+									<div class="tech-icons">
+										<div class="tech-icon" data-label="Python" title="Python">
+										  <i class="fab fa-python"></i>
+										</div>
+										<div class="tech-icon" data-label="UiPath" title="UiPath">
+										  <i class="fas fa-robot"></i>
+										</div>
+										<div class="tech-icon" data-label="R Studio" title="R Studio">
+										  <i class="fab fa-r-project"></i>
+										</div>
+										<div class="tech-icon" data-label="Jupyter" title="Jupyter Notebooks">
+										  <i class="fas fa-book"></i>
+										</div>
+									  </div>
+
+
+								</div>
+							</div>
+							<br>
+
+
+							<!-- HPE-->
+							<div class="card">
+								<div class="container">
+									<br>
+									<img src="images/hpe_logo.png" width=65%>
+									<br>
+									<font size="+3">IT Student Consultant - <a href="https://www.hpe.com/" target="_blank">HPE</a></font>
+									<p><b>Jan. 2024 - May 2024</b>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Spring, TX</p>
+									<p><strong>MIS 4397: Technology Consulting w/HPE</strong>
+										<br>
+										An elective at the University of Houston in collaboration with Hewlett Packard Enterprises, this course tasked us with optimizing operations for a small to medium-sized business.										<br>
+										<br>
+										Through a real-world project, we gained practical IT consulting experience by setting up systems, streamlining workflows, documenting IT processes, and deploying tools such as CRMs, LMS, and IT project management applications.										<br>
+										</p>
+
+											
+											<div class="tech-icons">
+											  <div class="tech-icon" data-label="LMS" title="LMS">
+												<i class="fas fa-chalkboard-teacher"></i>
+											  </div>
+											  <div class="tech-icon" data-label="CRM" title="CRM">
+												<i class="fas fa-user-friends"></i>
+											  </div>
+											  <div class="tech-icon" data-label="IT PMO" title="IT PMO">
+												<i class="fas fa-project-diagram"></i>
+											  </div>
+											  <div class="tech-icon" data-label="Consulting" title="Consulting">
+												<i class="fas fa-handshake"></i>
+											  </div>
+											</div>
+										  
+
+						
+								</div>
+							</div>
+							<br>
+
+
+							<!-- Texas Bay Credit Union-->
+							<div class="card">
+								<div class="container">
+									<br>
+									<img src="images/texasbay_logo3.png" width=50%>
+									<br>
+									<br>
+									<font size="+3">Finance Intern - <a href="https://www.texasbaycu.org/" target="_blank">Texas Bay CU</a></font>
+									<p><b>June 2023 - Aug. 2023</b>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Richmond, TX</p>
+									<p>As a Finance Intern at Texas Bay CU, I rotated through various tasks, focusing on financial reporting, data visualization, and ensuring member data accuracy using the credit union's databases.
+
+										<div class="tech-icons">
+											<div class="tech-icon break-label" data-label="Database&#10;Management" title="Database Management">
+											  <i class="fas fa-database"></i>
+											</div>
+											<div class="tech-icon break-label" data-label="Financial&#10;Services" title="Financial Services">
+											  <i class="fas fa-hand-holding-usd"></i>
+											</div>
+											<div class="tech-icon break-label" data-label="Financial&#10;Analysis" title="Financial Analysis">
+											  <i class="fas fa-chart-line"></i>
+											</div>
+											<div class="tech-icon break-label" data-label="Data&#10;Reporting" title="Data Reporting">
+												<i class="fas fa-chart-bar"></i>
+											</div>
+										  </div>
+										  
+										  
+										  
+
+
+
+									</p>
+				
+								</div>
+							</div>
+							<br>
+
+							<!-- Eagle Tech-->
+							<div class="card">
+								<div class="container">
+									<br>
+									<img src="images/eagle_logo.png" width=45%>
+									<br>
+									<br>
+									<font size="+3">Business Analyst - <a href="https://www.eagletechsupply.com" target="_blank">Eagle Tech</a></font>
+									<p><b>Jan. 2023 - May 2023</b>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Houston, TX</p>
+									<p>As a Business Analyst, I managed a range of responsibilities, including processing purchase and sales orders, updating the CRM, and executing analytical and web development projects.
+
+
+										<div class="tech-icons">
+											<div class="tech-icon break-label" data-label="CRM" title="CRM">
+											  <i class="fas fa-users"></i>
+											</div>
+											<div class="tech-icon break-label" data-label="Business&#10;Processes" title="Business Processes">
+											  <i class="fas fa-cogs"></i>
+											</div>
+											<div class="tech-icon break-label" data-label="Data&#10;Analytics" title="Data Analytics">
+											  <i class="fas fa-chart-pie"></i>
+											</div>
+											<div class="tech-icon break-label" data-label="Project&#10;Management" title="Project Management">
+											  <i class="fas fa-tasks"></i>
+											</div>
+										  </div>
+										  
+
+
+									</p>
+
+								</div>
+							</div>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+
+
+								<h2 class="major">Education</h2>
+							<!-- University of Houston -->
+							<div class="card">
+								<div class="container">
+									<br>
+									<img src="images/uh_logo8.png" width=50%>
+									<br>
+									<br>
+									<font size="+3">BBA in Finance & MIS - <a href="https://uh.edu/" target="_blank">University of Houston</a></font>
+									<p><b>Aug. 2021 - Dec. 2024</b>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Houston, TX</p>
+									<p>
+										Graduated Cum Laude with a double major in Finance and MIS from the C.T. Bauer College of Business, building a strong foundation in financial and IT coursework alongside solid statistical, quantitative, and analytical skills.
+
+
+
+
+
+
+
+
+
+
+
+										<div class="tech-icons">
+											<div class="tech-icon break-label" data-label="Web&#10;Development" title="Web Development">
+											  <i class="fas fa-code"></i>
+											</div>
+											<div class="tech-icon break-label" data-label="Object Orientated&#10;Programming" title="Object Orientated Programming">
+											  <i class="fas fa-cube"></i>
+											</div>
+											<div class="tech-icon" data-label="IT&#10;PMO" title="IT PMO">
+											  <i class="fas fa-project-diagram"></i>
+											</div>
+											<div class="tech-icon break-label" data-label="Business&#10;Statistics" title="Business Statistics">
+											  <i class="fas fa-chart-bar"></i>
+											</div>
+										  
+											<!-- Force a new row if needed -->
+											<div class="w-100"></div>
+										  
+											<div class="tech-icon break-label" data-label="Database&#10;Management" title="Database Management">
+											  <i class="fas fa-database"></i>
+											</div>
+											<div class="tech-icon break-label" data-label="Risk&#10;Management" title="Risk Management">
+											  <i class="fas fa-balance-scale"></i>
+											</div>
+											<div class="tech-icon break-label" data-label="Systems&#10;Design" title="Systems Design">
+											  <i class="fas fa-sitemap"></i>
+											</div>
+											<div class="tech-icon break-label" data-label="IT&#10;Administration" title="IT Administration">
+											  <i class="fas fa-tools"></i>
+											</div>
+										  </div>
+										  
+										  
+										  
+										  
+										  
+
+
+									</p>
+								</div>
+							</div>
+							<br>
+
+						</article>
+
+
+
+
+
+
+
+
+
+					<!---------------- PROJECTS ---------------->
+							<article id="about">
+								<h2 class="major">Projects</h2>
+								<p>Throughout my internship and career, I've actively pursued activities, case competitions, and projects to continually sharpen my skills and technical expertise.</p>
+								<p>Here's a list of projects and competitions I've worked on, including case competitions, internship tasks, and personal interests.</p>
+								<br>
+								<br>
+								<h3>Data Science Projects</h3>
+
+
+
+						<!-- PROJECT #1 -->
+								<div class="card">
+									<div class="centercontainer">
+										<font size="+2"><b>Emoji&nbsp;Project 1</b></font><br>
+										<font size="-0.5">Enter Text Here...<b><a href="linkhere"
+													target="_blank"><br>View Project</a></b></font>
+									</div>
+								</div>
+								<br>
+
+
+
+
+								
+						<!-- PROJECT #2 -->
+								<div class="card">
+									<div class="centercontainer">
+										<font size="+2"><b>Emoji&nbsp;Project 2</b></font><br>
+										<font size="-0.5">Enter Text Here....<b><a href="linkhere"
+													target="_blank"><br>View Project</a></b></font>
+									</div>
+								</div>
+								<br>
+
+
+						<!-- PROJECT #3 -->
+								<div class="card">
+									<div class="centercontainer">
+										<font size="+2"><b>Emoji&nbsp;Project 3</b></font><br>
+										<font size="-0.5">Enter Text Here... <b><a href="linkhere"
+													target="_blank"><br>View Project</a></b></font>
+									</div>
+								</div>
+								<br>
+							
+							
+
+
+								<h3>Previous Portfolios</h3>
+
+							
+						<!-- PORTFOLIO V5 -->
+								<div class="card">
+									<div class="centercontainer">
+										<font size="+2"><b>🖥️&nbsp; Portfolio V5</b></font><br>
+										<font size="-0.5">Enter Text Here...<b><a href="https://rickypenajr.github.io/rickypenajr_v5/"
+													target="_blank"><br>View Website</a></b></font>
+									</div>
+								</div>
+								<br>
+
+
+
+						<!-- PORTFOLIO V1 -->
+								<div class="card">
+									<div class="centercontainer">
+										<font size="+2"><b>👷🏻‍♂️&nbsp;Portfolio V1</b></font><br>
+										<font size="-0.5">Enter Text Here...<b><a href="https://rickypenajr.github.io/rickypenajr_v1/"
+													target="_blank"><br>View Website</a></b></font>
+											<br>
+									</div>
+								</div>
+								<br>
+
+
+
+
+
+
+						<!------ COMPETITIONS ------->
+								<h3>Case Studies / Case Competitions</h3>
+
+
+
+							<!-- COMPETITION 1-->
+								<div class="card">
+									<div class="centercontainer">
+										<font size="+2"><b>🏅&nbsp;KPMG Ideation Case Competition</b></font><br>
+										<font size="-0.5"><i>Fall 2023 - 2nd Place</i><br>Enter Text Here.... <b><a
+													href="linkhere"
+													target="_blank"><br>View Project</a></b>
+										</font>
+									</div>
+								</div>
+								<br>
+
+								<div class="card">
+									<div class="centercontainer">
+										<font size="+2"><b>💼&nbsp; University of Houston Ethics Case Study</b></font><br>
+										<font size="-0.5"><i>Fall 2021</i><br>Enter Text Here.... <b><a
+													href="linkhere"
+													target="_blank"><br>View Project</a></b>
+										</font>
+									</div>
+								</div>
+								<br>
+								
+							</article>
+
+
+
+
+
+
+
+
+					<!--------------CERTIFICATIONS ---------------->
+						<article id="certifications">
+							<h2 class="major">Certifications</h2>
+							<p>I consistently thrive on learning new technical skills outside of class and find online courses and certifications that are highly effective, competitive, and relevant.</p>
+							<p>Below is a compliation of various certifications I’ve earned through numerous courses.</p>
+							<ul class="actions">
+								<li><a href="https://www.linkedin.com/in/rickypenajr/details/certifications/" target="_blank" class="button big">Proof of Certifications</a></li>
+							</ul>
+							<br>
+							<br>
+					
+
+
+
+
+
+						<!--CERTIFICATION 1-->
+						<h3>Alteryx Certificate</h3>
+							<div class="card">
+								<div class="container">
+									<br>
+									<img src="cert-images/alteryx-designer-logo.png" width=25%>
+									<br>
+									<font size="+3">Alteryx Designer Core</font>
+									<p> This certificate is an introductory course to learning key analytical skills using Alteryx, covering data blending, transformation, and reporting.
+									</p>
+									<ul class="actions">
+										<li><a href="linkhere" target="_blank" class="button big">View Certificate</a></li>
+									</ul>
+								</div>
+							</div>
+							<br>
+
+
+
+
+							<!-----CERTIFICATION 2----->
+							<h3>Microsoft Certificate</h3>
+							<div class="card">
+								<div class="container">
+									<br>
+									<img src="cert-images/azure-logo-1.png" width=25%>
+									<br>
+									<font size="+3">Microsoft Azure Fundamentals (AZ-900)</font>
+									<p>This certificate is an introductory course to learning fundamental cloud concepts with Microsoft Azure, covering core services, security, privacy, pricing, and support.
+									</p>
+									<ul class="actions">
+										<li><a href="linkhere" target="_blank" class="button big">View Certificate</a></li>
+									</ul>
+								</div>
+							</div>
+							<br>
+							
+							
+							<!-----CERTIFICATION 3----->
+							<h3>UiPath Certificate</h3>
+							<div class="card">
+								<div class="container">
+									<br>
+									<img src="cert-images/uipath-logo.png" width=30%>
+									<br>
+									<font size="+3">UiPath Certified Professional Automation Developer - Associate</font>
+									<p>This certificate is an introductory course to learning key automation development skills using UiPath, covering RPA concepts, process automation, and workflow design.</p>
+									<ul class="actions">
+										<li><a href="linkhere" target="_blank" class="button big">View Certificate</a></li>
+									</ul>
+								</div>
+							</div>
+							<br>
+
+
+
+
+
+									<!-----CERTIFICATION 4----->
+									<h3>AWS Certificate</h3>
+									<div class="card">
+										<div class="container">
+											<br>
+											<img src="cert-images/aws-cloud-logo.png" width=25%>
+											<br>
+											<font size="+3">AWS Certified Cloud Practitioner</font>
+											<p>This certificate is an introductory course to learning fundamental cloud concepts using AWS, covering core services, security, pricing, and support.											</p>
+											<ul class="actions">
+												<li><a href="linkhere" target="_blank" class="button big">View Certificate</a></li>
+											</ul>
+										</div>
+									</div>
+
+
+
+
+
+						</article>
+
+
+
+
+
+
+
+
+
+
+						<!--------- ELEMENTS ---------->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!--------- EXPERIMENTAL SCRIPTS ---------->
+
+				  
+
+
+
+
+
+
+
+
+				<!--------- FOOTER ---------->
+					<footer id="footer">
+						<p class="copyright">&copy; Ricky Peña Jr. 2025. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!------- BG (Background) -------->
+			<div id="bg"></div>
+
+		<!------- SCRIPTS --------->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+
+
+
+		</body>
+</html>
