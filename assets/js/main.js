@@ -421,9 +421,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     var backToTopButton = document.getElementById("backToTop");
 
-    // Show button when scrolling down 300px
+    // Ensure button is hidden on page load
+    backToTopButton.style.display = "none";
+
+    // Show button only after scrolling down 300px
     window.addEventListener("scroll", function () {
-        if (document.documentElement.scrollTop > 300 || document.body.scrollTop > 300) {
+        if (window.scrollY > 300) {
             backToTopButton.style.display = "block";
         } else {
             backToTopButton.style.display = "none";
@@ -446,11 +449,6 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             backToTopButton.style.backgroundColor = "#000"; // Restore original
         }, 1000);
-
-        // Only remove hash if it's "#top" (prevents interfering with navigation)
-        if (window.location.hash === "#top") {
-            history.replaceState(null, null, window.location.pathname);
-        }
     });
 });
 
