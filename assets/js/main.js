@@ -421,17 +421,20 @@
 document.addEventListener("DOMContentLoaded", function () {
     var backToTopButton = document.getElementById("backToTop");
 
-    // Ensure button is hidden on page load
-    backToTopButton.style.display = "none";
-
-    // Show button only after scrolling down 300px
-    window.addEventListener("scroll", function () {
+    // Function to check scroll position and toggle button visibility
+    function toggleBackToTopButton() {
         if (window.scrollY > 300) {
             backToTopButton.style.display = "block";
         } else {
             backToTopButton.style.display = "none";
         }
-    });
+    }
+
+    // Ensure button is hidden on page load, even if the browser restores scroll position
+    toggleBackToTopButton();
+
+    // Show button only after scrolling down 300px
+    window.addEventListener("scroll", toggleBackToTopButton);
 
     // Prevents hash navigation issue and ensures smooth scrolling
     backToTopButton.addEventListener("click", function (event) {
