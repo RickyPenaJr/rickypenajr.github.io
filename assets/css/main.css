@@ -1849,7 +1849,7 @@ input, select, textarea {
 		  
 
 
-		  
+
 
 
 
@@ -1869,16 +1869,19 @@ input, select, textarea {
 			height: 50px;
 			border-radius: 50%;
 			font-size: 22px;
-			text-align: center;
-			line-height: 50px;
+			display: flex; /* Ensures proper centering */
+			align-items: center;
+			justify-content: center;
 			transition: background 0.3s ease, transform 0.2s ease;
 		}
 		
 		/* Center the arrow icon */
 		#backToTop i {
+			font-size: 22px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			width: 100%;
 			height: 100%;
 		}
 		
@@ -1890,8 +1893,15 @@ input, select, textarea {
 				font-size: 20px;
 				bottom: 10px;
 				right: 10px;
-				padding: 5px;
-				line-height: normal; /* Fix potential centering issues */
+				padding: 0;
+				display: flex; /* Fix for some mobile browsers */
+				align-items: center;
+				justify-content: center;
+			}
+		
+			/* Ensure icon remains centered */
+			#backToTop i {
+				font-size: 20px;
 			}
 		}
 		
@@ -1901,7 +1911,17 @@ input, select, textarea {
 			transform: scale(1.1);
 		}
 		
-  
-  
-  
+		/* Reset button color after clicking */
+		#backToTop:active {
+			background-color: #333 !important; /* Darker on tap */
+		}
+		
+		/* Prevent hover from sticking on mobile */
+		@media (hover: none) {
+			#backToTop:hover {
+				background-color: #000 !important; /* Reset color */
+				transform: scale(1); /* Prevents getting stuck */
+			}
+		}
+		
   
