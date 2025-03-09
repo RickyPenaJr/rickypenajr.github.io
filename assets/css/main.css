@@ -1853,6 +1853,26 @@ input, select, textarea {
 
 
 
+		  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1887,8 +1907,7 @@ input, select, textarea {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			margin: 0; /* Remove any unwanted spacing */
-			padding: 0;
+			margin-left: 1.5px; /* ✅ Moves arrow slightly to the right for perfect centering */
 		}
 		
 		/* Mobile Fix: Ensure perfect positioning */
@@ -1905,6 +1924,7 @@ input, select, textarea {
 			/* Ensure icon remains centered */
 			#backToTop i {
 				font-size: 20px;
+				margin-left: 1.2px; /* ✅ Adjusted for mobile centering */
 			}
 		}
 		
@@ -1927,16 +1947,4 @@ input, select, textarea {
 			}
 		}
 		
-
-
-
-		/* Ensure the arrow is perfectly centered */
-#backToTop i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    margin-left: .9px; /* Moves arrow slightly to the right */
-}
-
   
