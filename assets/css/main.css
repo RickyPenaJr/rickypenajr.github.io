@@ -1845,14 +1845,21 @@ input, select, textarea {
 
 
 
+
 		  
+
+
+		  
+
+
+
 
 		  #backToTop {
 			display: none; /* Hidden by default */
 			position: fixed;
-			bottom: 20px;
-			right: 20px;
-			z-index: 100;
+			bottom: 15px; /* Default for desktop */
+			right: 15px; /* Default for desktop */
+			z-index: 999; /* Ensure it's above other elements */
 			border: none;
 			outline: none;
 			background-color: #000;
@@ -1864,9 +1871,10 @@ input, select, textarea {
 			font-size: 22px;
 			text-align: center;
 			line-height: 50px;
-			transition: background 0.3s ease;
+			transition: background 0.3s ease, transform 0.2s ease;
 		}
 		
+		/* Center the arrow icon */
 		#backToTop i {
 			display: flex;
 			align-items: center;
@@ -1874,11 +1882,25 @@ input, select, textarea {
 			height: 100%;
 		}
 		
-		#backToTop:hover {
-			background-color: #333;
+		/* Mobile Fix: Ensure perfect positioning */
+		@media screen and (max-width: 600px) {
+			#backToTop {
+				width: 45px;
+				height: 45px;
+				font-size: 20px;
+				bottom: 10px;
+				right: 10px;
+				padding: 5px;
+				line-height: normal; /* Fix potential centering issues */
+			}
 		}
 		
-  
+		/* Smooth Hover Effect */
+		#backToTop:hover {
+			background-color: #333;
+			transform: scale(1.1);
+		}
+		
   
   
   
