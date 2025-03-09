@@ -417,32 +417,33 @@
 
 
 
+
 document.addEventListener("DOMContentLoaded", function () {
     var backToTopButton = document.getElementById("backToTop");
 
     // Show button when scrolling down 300px
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 300) {
+        if (document.documentElement.scrollTop > 300 || document.body.scrollTop > 300) {
             backToTopButton.style.display = "block";
         } else {
             backToTopButton.style.display = "none";
         }
     });
 
-    // Scroll back to top without triggering navigation
+    // Prevents hash navigation issue and ensures smooth scrolling
     backToTopButton.addEventListener("click", function (event) {
-        event.preventDefault(); // Prevent default behavior
-        event.stopPropagation(); // Stop any event bubbling
-        event.stopImmediatePropagation(); // Block other event listeners from triggering
+        event.preventDefault(); // Stop default anchor behavior
+        event.stopPropagation(); // Prevent bubbling
+        event.stopImmediatePropagation(); // Block interference from other scripts
 
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
 
-        // Force-remove any hash changes to prevent jumping to home
-        if (window.location.hash) {
-            history.replaceState(null, null, " "); // Clears the hash
+        // 🚀 Only remove hash if it's "#top" (prevents interfering with other page navigation)
+        if (window.location.hash === "#top") {
+            history.replaceState(null, null, window.location.pathname);
         }
     });
 });
