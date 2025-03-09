@@ -1834,7 +1834,50 @@ input, select, textarea {
 		  
 		  
 
+		  
 
+
+
+
+
+
+
+
+
+
+		  
+
+		  #backToTop {
+			display: none; /* Hidden by default */
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			z-index: 100;
+			border: none;
+			outline: none;
+			background-color: #000;
+			color: white;
+			cursor: pointer;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			font-size: 22px;
+			text-align: center;
+			line-height: 50px;
+			transition: background 0.3s ease;
+		}
+		
+		#backToTop i {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+		
+		#backToTop:hover {
+			background-color: #333;
+		}
+		
   
   
   
