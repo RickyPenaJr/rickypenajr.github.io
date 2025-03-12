@@ -2,7 +2,7 @@
 
 ## rickypenajr.github.io
 
-Main Portfolio Website - rickypenajr.github.io
+Main Portfolio Website - www.rickypenajr.github.io
 <br>
 Version: 4.1.0 (Updated: March 09, 2025
 
