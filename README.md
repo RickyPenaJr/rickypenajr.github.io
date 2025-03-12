@@ -2,7 +2,7 @@
 
 ## rickypenajr.github.io
 
-Data Science Portfolio - [www.rickypenajr.github.io](https://rickypenajr.github.io/)
+Data Science Portfolio V4 - [www.rickypenajr.github.io](https://rickypenajr.github.io/)
 <br>
 Version: 4.1.0 (Updated: March 09, 2025
 <br>
