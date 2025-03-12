@@ -3,5 +3,8 @@
 ## rickypenajr.github.io
 
 Main Portfolio Website - rickypenajr.github.io
+<br>
+Version: 4.1.0 (Updated: March 09, 2025
+
 
 Personal portfolio site showcasing my work in data analytics, data science, and personal projects.
