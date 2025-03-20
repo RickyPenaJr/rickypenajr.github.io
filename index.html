@@ -20,13 +20,6 @@ Version 6.1.1 → A small fix or improvement without adding new features
 
 
 
-
-<! -----BEGINNING DOCUMENT----->
-
-
-
-
-
 <!-----BEGINNING DOCUMENT----->
 <!DOCTYPE HTML>
 <html lang="en">
@@ -45,10 +38,7 @@ Version 6.1.1 → A small fix or improvement without adding new features
 
 
 
-
-
 <!-- FAVICON LINK-->
-
 
 <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/png" sizes="192x192" href="favicon/favicon-192x192.png"/>
@@ -59,18 +49,18 @@ Version 6.1.1 → A small fix or improvement without adding new features
 <meta name="apple-mobile-web-app-title" content="MyWebSite" />
 <link rel="manifest" href="favicon/site.webmanifest" />
 
-
-  <link rel="stylesheet" href="np2.css" media="screen">
+	
+<link rel="stylesheet" href="np2.css" media="screen">
 <link rel="stylesheet" href="index.css" media="screen">
-  <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-  <script class="u-script" type="text/javascript" src="np.js" defer=""></script>
-  <meta name="generator" content="Nicepage 7.0.3, nicepage.com">
-  <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-  <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+<script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+<script class="u-script" type="text/javascript" src="np.js" defer=""></script>
+<meta name="generator" content="Nicepage 7.0.3, nicepage.com">
+<link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+<link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
 
 
 
-    <!-- PRELOAD (DO NOT DELETE) -->
+<!-- PRELOAD (DO NOT DELETE) -->
   <body class="is-preload">
 
 
@@ -82,14 +72,17 @@ Version 6.1.1 → A small fix or improvement without adding new features
             <div class="content">
                 <div class="inner">
                     <h1>Ricky Peña Jr.</h1>
-					<h3>IT Consultant • Data Analyst</h3>
-					<p><i class="fas fa-map-marker-alt"></i> Houston, TX</p>
-					<button id="emailButton" onclick="copyEmail()">  <i class="fas fa-envelope"></i>&nbsp;Email</button>
+				<h3>IT Consultant • Data Analyst</h3>
+				<p><i class="fas fa-map-marker-alt"></i> Houston, TX</p>
+				<button id="emailButton" onclick="copyEmail()">  
+				<i class="fas fa-envelope">
+				</i>&nbsp;Email</button>
       <span id="copyMessage" style="display:none; color: green; margin-left: 10px;">&#10003; Email copied</span>
                 </div>
             </div>
 
-			
+		
+		<!-- Copy Email Button / Script -->
 			<script>
 				function copyEmail() {
 				  const email = "rickypenajr@gmail.com";
@@ -105,24 +98,33 @@ Version 6.1.1 → A small fix or improvement without adding new features
 				  });
 				}
 			  </script>
+		<!-- Copy Email Button / Script (END) -->
+
 
 
             <nav>
 
 
 
+
+		    
                 <ul>
-				<li><a href="#intro"><strong>About Me</strong></a></li>
-				<li><a href="#experience"><strong>Experience</strong></a></li>
-				<li><a href="#projects"><strong>Projects</strong></a></li>
-				<li><a href="#certifications"><strong>Certificates</strong></a></li>
-				<li><a href="pdfs/Ricardo_Pena_Resume.pdf" target="_blank"><strong>Resume</strong></a></li>
+			<li><a href="#intro"><strong>About Me</strong></a></li>
+			<li><a href="#experience"><strong>Experience</strong></a></li>
+			<li><a href="#projects"><strong>Projects</strong></a></li>
+			<li><a href="#certifications"><strong>Certificates</strong></a></li>
+			<li><a href="pdfs/Ricardo_Pena_Resume.pdf" target="_blank"><strong>Resume</strong></a></li>
                 </ul>
 
 
 
 
             </nav>
+
+
+
+
+		
             <div class="inner">
                 <ul class="icons">
                     <li><a href="tel:+12819758340" class="fas fa-phone"></a></li>
@@ -142,294 +144,278 @@ Version 6.1.1 → A small fix or improvement without adding new features
 
 
 		
-				<!----- MAIN ----->
-					<div id="main">
+		<!----- MAIN ----->
+			<div id="main">
 
 
 
 
-						<!----- ABOUT ME ----->
-							<article id="intro">
-							<h2 class="major" id= "about-heading">About Me</h2>
-							<div style="text-align: center;">
-								<img src="images/headshot.jpg" alt="" width="65%" style="border-radius: 25px;" />
-							</div>
-							<br>
+				<!----- ABOUT ME ----->
+					<article id="intro">
+					<h2 class="major" id= "about-heading">About Me</h2>
+					<div style="text-align: center;">
+					<img src="images/headshot.jpg" alt="" width="65%" style="border-radius: 25px;" />
+					</div>
+					<br>
 
 
 							
-							<!-- <h3>Welcome</h3> -->
-							<!--<p><b>Welcome to My Portfolio!</b></p> ---> 
+				<!-- <h3>Welcome</h3> -->
+				<!--<p><b>Welcome to My Portfolio!</b></p> ---> 
 
-							<p> I began my interest for Data Science while pursuing my undergrad in MIS & Finance at the University of Houston and through internship opportunities where I was able to apply it to real-world scenarios.</p>
-							<p> My MIS coursework provided technical expertise, while my Finance courses strengthen my analytical mindset—together, they blended perfectly towards Data Science, Business Intelligence, and Data Analytics.</p>
-							<p> I've created this portfolio to showcase my work to others; If you've found yourself here, feel free to explore. &nbsp; 🚀</p>
+				<p> I began my interest for Data Science while pursuing my undergrad in MIS & Finance at the University of Houston and through internship opportunities where I was able to apply it to real-world scenarios.</p>
+				<p> My MIS coursework provided technical expertise, while my Finance courses strengthen my analytical mindset—together, they blended perfectly towards Data Science, Business Intelligence, and Data Analytics.</p>
+				<p> I've created this portfolio to showcase my work to others; If you've found yourself here, feel free to explore. &nbsp; 🚀</p>
 
-							<br>
-							<br>
-							<br>
-							<h2 class="major" id= "about-heading">Technical Skills</h2>
-							<p>My technical skills are a blend of programming languages, data analysis tools, and software applications that I have acquired through my coursework and internships.
-
-
+				<br>
+				<br>
+				<br>
+				<h2 class="major" id= "about-heading">Technical Skills</h2>
+				<p>My technical skills are a blend of programming languages, data analysis tools, and software applications that I have acquired through my coursework and internships.
 
 
+	<!---------- Languages ---------->
+				<h3>Languages</h3>
+				<div class="skill-icons">
 
-							<!-- Languages -->
-							<h3>Languages</h3>
-							<div class="skill-icons">
+			<!-- HTML5 Icon -->				
+				<div class="skill-icon" title="HTML5">
+				<i class="fab fa-html5"></i>
+				<span>HTML5</span>
+				</div>
 
-								
-								<div class="skill-icon" title="HTML5">
-								<i class="fab fa-html5"></i>
-								<span>HTML5</span>
-								</div>
-								<div class="skill-icon" title="CSS3">
-								<i class="fab fa-css3-alt"></i>
-								<span>CSS3</span>
-								</div>
-								<div class="skill-icon" title="JavaScript">
-								<i class="fab fa-js"></i>
-								<span>JavaScript</span>
-								</div>
-								<div class="skill-icon" title="Java">
-								<i class="fab fa-java"></i>
-								<span>Java</span>
-								</div>
-								<div class="skill-icon" title="Python">
-								<i class="fab fa-python"></i>
-								<span>Python</span>
-								</div>
-								<div class="skill-icon" title="R">
-								<i class="fab fa-r-project"></i>
-								<span>R</span>
-								</div>
-							</div>
+			<!-- CSS3 Icon -->	
+				<div class="skill-icon" title="CSS3">
+				<i class="fab fa-css3-alt"></i>
+				<span>CSS3</span>
+				</div>
 
+			<!-- JavaScript Icon -->	
+				<div class="skill-icon" title="JavaScript">
+				<i class="fab fa-js"></i>
+				<span>JavaScript</span>
+				</div>
 
+			<!-- Java Icon -->	
+				<div class="skill-icon" title="Java">
+				<i class="fab fa-java"></i>
+				<span>Java</span>
+				</div>
 
+			<!-- Python Icon -->
+				<div class="skill-icon" title="Python">
+				<i class="fab fa-python"></i>
+				<span>Python</span>
+				</div>
 
-								
-							<!-- Tools / Applications -->
-							<h3>Tools / Applications</h3>
-							<div class="skill-icons">
-
-
-
-								<div class="skill-icon" title="Excel VBA">
-								<img src="icons/excel-icon-v1.png" alt="Excel VBA" style="width:32px; height:auto;">
-								<span>Excel VBA</span>
-								</div>
-
-								
-							<!-- Old PowerBI Logo -->
-								<!-- <div class="skill-icon" title="Power BI">
-								<i class="fas fa-chart-line"></i>
-								<span>Power&nbsp;BI</span>
-								</div> -->
-
-								
-								<div class="skill-icon" title="Power BI">
-								<img src="icons/powerbi-icon.png" alt="Power BI" style="width:40px; height:auto;">
-								<span>Power&nbsp;BI</span>
-								</div>
-
-
-
-							<!-- Old Tableau Logo -->
-								<!-- <div class="skill-icon" title="Tableau">
-								<i class="fas fa-chart-pie"></i>
-								<span>Tableau</span>
-								</div> -->
-
-
-								<div class="skill-icon" title="Tableau">
-								<img src="icons/tableau-icon.png" alt="Tableau" style="width:38px; height:auto;">
-								<span>Tableau</span>
-								</div>
-
-
-
-
-							<!-- Old Google Colab Logo -->
-								<!-- <div class="skill-icon" title="Google Colab">
-								<i class="fab fa-google"></i>
-								<span>Google Colab</span>
-								</div> -->
-
-
-
-								<div class="skill-icon" title="Google Colab">
-								<img src="icons/colab-icon.png" alt="Google Colab" style="width:35px; height:auto;">
-								<span>Google Colab</span>
-								</div>
+			<!-- R Icon -->	
+				<div class="skill-icon" title="R">
+				<i class="fab fa-r-project"></i>
+				<span>R</span>
+				</div>
+	
+					</div>
 
 
 								
-
-							<!-- VS Code Icon -->
-
-								
-								<!-- <div class="skill-icon" title="VS Code">
-								<i class="fas fa-code"></i>
-								<span>VS Code</span>
-								</div> -->
-
-								<div class="skill-icon" title="VS Code">
-								<img src="icons/vs-icon.png" alt="VS Code" style="width:32px; height:auto;">
-								<span>VS Code</span>
-								</div>
-
-
-
-								
-							<!-- Jupyter Notebook -->
-
-								
-								<!--  <div class="skill-icon" title="Jupyter Notebook">
-								<i class="fas fa-book"></i>
-								<span>Jupyter Notebook</span>
-								</div>  -->
-
-								<div class="skill-icon" title="Jupyter Notebook">
-								<img src="images/jupyter-icon1.png" alt="Jupyter Notebook" style="width:42px; height:auto;">
-								<span>Jupyter Notebook</span>
-								</div>
-
-
-
-							<!-- RPA Tools / Ui Path -->
-								
-								<!-- <div class="skill-icon" title="RPA">
-								<i class="fas fa-robot"></i>
-								<span style="white-space: pre-wrap;">RPA Tools</span>
-								</div> -->
-
-								<!-- <div class="skill-icon" title="RPA">
-								<i class="fas fa-robot"></i>
-								<span>RPA</span>
-								</div> -->
+	<!---------- Data Analytics Tools ---------->
+				<h3>Data Analytics Tools</h3>
+				<div class="skill-icons">
 
 					
-								<div class="skill-icon" title="UiPath">
-								<img src="images/uipath-icon.png" alt="UiPath" style="width:32px; height:auto;">
-								<span>UiPath</span>
-								</div>
+			<!-- Excel VBA Icon -->
+				<div class="skill-icon" title="Excel VBA">
+				<img src="icons/excel-icon-v1.png" alt="Excel VBA" style="width:32px; height:auto;">
+				<span>Excel VBA</span>
+				</div>
+
+
+			<!-- Power BI Icon -->
+				<!-- Old PowerBI Icon -->
+				<!-- <div class="skill-icon" title="Power BI">
+				<i class="fas fa-chart-line"></i>
+				<span>Power&nbsp;BI</span>
+				</div> -->
+								
+				<div class="skill-icon" title="Power BI">
+				<img src="icons/powerbi-icon.png" alt="Power BI" style="width:40px; height:auto;">
+				<span>Power&nbsp;BI</span>
+				</div>
+
+
+
+			<!-- Tableau Icon -->
+				<!-- Old Tableau Icon -->
+				<!-- <div class="skill-icon" title="Tableau">
+				<i class="fas fa-chart-pie"></i>
+				<span>Tableau</span>
+				</div> -->
+
+				<div class="skill-icon" title="Tableau">
+				<img src="icons/tableau-icon.png" alt="Tableau" style="width:38px; height:auto;">
+				<span>Tableau</span>
+				</div>
+
+
+
+			<!-- Google Colab Icon -->
+				<!-- Old Google Colab Icon -->
+				<!-- <div class="skill-icon" title="Google Colab">
+				<i class="fab fa-google"></i>
+				<span>Google Colab</span>
+				</div> -->
+
+				<div class="skill-icon" title="Google Colab">
+				<img src="icons/colab-icon.png" alt="Google Colab" style="width:35px; height:auto;">
+				<span>Google Colab</span>
+				</div>
 
 
 								
+			<!-- VS Code Icon -->
+				<!-- Old VS Code Icon -->								
+				<!-- <div class="skill-icon" title="VS Code">
+				<i class="fas fa-code"></i>
+				<span>VS Code</span>
+				</div> -->
 
-							<!-- SAP -->
-
-								<!-- <div class="skill-icon" title="SAP">
-								<img src="images/sap-logo.png" alt="SAP" style="width:55px; height:auto;">
-								<span style="white-space: pre-wrap;">SAP</span>
-								</div> -->
-
-								<div class="skill-icon" title="SAP">
-								<img src="images/sap-logo.png" alt="SAP" style="width:55px; height:auto;">
-								<span>SAP</span>
-								</div>
-
+				<div class="skill-icon" title="VS Code">
+				<img src="icons/vs-icon.png" alt="VS Code" style="width:32px; height:auto;">
+				<span>VS Code</span>
+				</div>
 
 
+
+			<!-- Jupyer Notebook Icon -->
+				<!-- Old Jupyter Notebook Icon -->
+				<!--  <div class="skill-icon" title="Jupyter Notebook">
+				<i class="fas fa-book"></i>
+				<span>Jupyter Notebook</span>
+				</div>  -->
+
+				<div class="skill-icon" title="Jupyter Notebook">
+				<img src="images/jupyter-icon1.png" alt="Jupyter Notebook" style="width:42px; height:auto;">
+				<span>Jupyter Notebook</span>
+				</div>
+
+
+			<!-- RPA / UiPath Icon -->
+				<!-- Old RPA Tools / Ui Path Icon -->
+				<!-- <div class="skill-icon" title="RPA">
+				<i class="fas fa-robot"></i>
+				<span style="white-space: pre-wrap;">RPA Tools</span>
+				</div> -->
+
+				<!-- <div class="skill-icon" title="RPA">
+				<i class="fas fa-robot"></i>
+				<span>RPA</span>
+				</div> -->
+
+					
+				<div class="skill-icon" title="UiPath">
+				<img src="images/uipath-icon.png" alt="UiPath" style="width:32px; height:auto;">
+				<span>UiPath</span>
+				</div>
 
 
 								
-							<!-- Old Visio Logo -->
-								<!-- <div class="skill-icon" title="Visio">
-								<i class="fas fa-sitemap"></i>
-								<span>Visio</span>
-								</div> -->
+			<!-- SAP Icon -->
+				<!-- Old SAP Icon-->
+				<!-- <div class="skill-icon" title="SAP">
+				<img src="images/sap-logo.png" alt="SAP" style="width:55px; height:auto;">
+				<span style="white-space: pre-wrap;">SAP</span>
+				</div> -->
+
+				<div class="skill-icon" title="SAP">
+				<img src="images/sap-logo.png" alt="SAP" style="width:55px; height:auto;">
+				<span>SAP</span>
+				</div>
 
 
-								<div class="skill-icon" title="Visio">
-								<img src="icons/visio-logo1.png" alt="Visio" style="width:35px; height:auto;">
-								<span>Visio</span>
-								</div>
+			<!-- Visio Icon -->
+				<!-- Old Visio Icon -->
+				<!-- <div class="skill-icon" title="Visio">
+				<i class="fas fa-sitemap"></i>
+				<span>Visio</span>
+				</div> -->
 
 
-
+				<div class="skill-icon" title="Visio">
+				<img src="icons/visio-logo1.png" alt="Visio" style="width:35px; height:auto;">
+				<span>Visio</span>
+				</div>
 
 			
-								<div class="skill-icon" title="Alteryx">
-								<img src="icons/alteryx-icon.png" alt="Alteryx" style="width:25px; height:auto;">
-								<span>Alteryx</span>
-								</div>
+			<!-- Alteryx Icon -->
+				<div class="skill-icon" title="Alteryx">
+				<img src="icons/alteryx-icon.png" alt="Alteryx" style="width:25px; height:auto;">
+				<span>Alteryx</span>
+				</div>
 
 
+			<!-- AWS Icon -->
+				<div class="skill-icon" title="AWS">
+				<img src="icons/aws-icon.png" alt="AWS" style="width:38px; height:auto;">
+				<span>AWS</span>
+				</div>
 
-								<div class="skill-icon" title="AWS">
-								<img src="icons/aws-icon.png" alt="AWS" style="width:38px; height:auto;">
-								<span>AWS</span>
-								</div>
-
-
-
-
-								
+	
 							</div>
 
 
 
 
 
-								
-							<!-- Libraries -->
-							<h3>Libraries</h3>
-							<div class="skill-icons">
+		<!---------- Libraries ---------->	
+				<h3>Libraries</h3>
+				<div class="skill-icons">
+
+					
+			<!-- Pandas Icon -->
+				<!-- Old Pandas Icon -->
+				<!-- <div class="skill-icon" title="Pandas">
+				<i class="fas fa-table" style="font-size:32px; color:#ffffff;"></i>
+				<span>Pandas</span>
+				</div> -->
+
+				<div class="skill-icon" title="Pandas">
+				<img src="icons/pandas-icon1.png" alt="Pandas" style="width:38px; height:auto;">
+				<span>Pandas</span>
+				</div>
 
 
+			<!-- Matplotlib Icon -->
+				<!-- Old Matplotlib Icon -->
+				<!-- <div class="skill-icon" title="Matplotlib">
+				<i class="fas fa-chart-bar"></i>
+				<span>Matplotlib</span>
+				</div> -->
+
+				<div class="skill-icon" title="Matplotlib">
+				<img src="icons/matplotlib-icon2.png" alt="Matplotlib" style="width:45px; height:auto;">
+				<span>Matplotlib</span>
+				</div>
 
 
-								
-							<!-- Old Pandas Logo -->
-							<!-- <div class="skill-icon" title="Pandas">
-							<i class="fas fa-table" style="font-size:32px; color:#ffffff;"></i>
-							<span>Pandas</span>
-							</div> -->
+			<!-- NumPy Icon -->
+				<!-- Old NumPy Icon -->	
+				<!-- <div class="skill-icon" title="NumPy">
+				<i class="fas fa-calculator"></i>
+				<span>NumPy</span>
+				</div>-->
 
-								
-
-								
-							<div class="skill-icon" title="Pandas">
-							<img src="icons/pandas-icon1.png" alt="Pandas" style="width:38px; height:auto;">
-							<span>Pandas</span>
-							</div>
+				<div class="skill-icon" title="NumPy">
+				<img src="icons/numpy-icon3.png" alt="NumPy" style="width:35px; height:auto;">
+				<span>NumPy</span>
+				</div>
 
 
-							<!-- Old Matplotlib Logo -->
-							<!-- <div class="skill-icon" title="Matplotlib">
-							<i class="fas fa-chart-bar"></i>
-							<span>Matplotlib</span>
-							</div> -->
-
-
-							<div class="skill-icon" title="Matplotlib">
-							<img src="icons/matplotlib-icon2.png" alt="Matplotlib" style="width:45px; height:auto;">
-							<span>Matplotlib</span>
-							</div>
-
-
-							<!-- Old NumPy Logo -->	
-							<!-- <div class="skill-icon" title="NumPy">
-							<i class="fas fa-calculator"></i>
-							<span>NumPy</span>
-							</div>-->
-
-							<div class="skill-icon" title="NumPy">
-							<img src="icons/numpy-icon3.png" alt="NumPy" style="width:35px; height:auto;">
-							<span>NumPy</span>
-							</div>
-
-
-
-							<div class="skill-icon" title="Plotly">
-							<img src="icons/plotly-icon2.png" alt="Plotly" style="width:38px; height:auto;">
-							<span>Plotly</span>
-							</div>	
-
-								
+			<!-- Plotly Icon -->
+				<div class="skill-icon" title="Plotly">
+				<img src="icons/plotly-icon2.png" alt="Plotly" style="width:38px; height:auto;">
+				<span>Plotly</span>
+				</div>	
+	
 								
 							</div> 
 
@@ -437,61 +423,109 @@ Version 6.1.1 → A small fix or improvement without adding new features
 
 
 								
-							<!-- Databases -->
-							<h3>Databases</h3>
-							<div class="skill-icons">
-
-
-
-
-							<!-- MySQL Old Icon -->
-								<!-- <div class="skill-icon" title="MySQL">
-								<i class="fas fa-server" style="font-size:32px; color:#ffffff;"></i>
-								<span>MySQL</span>
-								</div> -->
-
-
-								<div class="skill-icon" title="MySQL">
-								<img src="icons/mysql-icon3.png" alt="MySQL" style="width:35px; height:auto;">
-								<span>MySQL</span>
-								</div>
-
-
-
-
+		<!---------- Database Management ---------->	
+				<h3>Database Management</h3>
+				<div class="skill-icons">
 								
+			<!-- MySQL Icon -->
+				<!-- MySQL Old Icon -->
+				<!-- <div class="skill-icon" title="MySQL">
+				<i class="fas fa-server" style="font-size:32px; color:#ffffff;"></i>
+				<span>MySQL</span>
+				</div> -->
+
+				<div class="skill-icon" title="MySQL">
+				<img src="icons/mysql-icon3.png" alt="MySQL" style="width:35px; height:auto;">
+				<span>MySQL</span>
+				</div>
+							
 								
-								<div class="skill-icon" title="SQL">
-								<i class="fas fa-database"></i>
-								<span>SQL</span>
-								</div>
+			<!-- MS Access Icon -->
+				<!-- MS Access Old Icon -->								
+				<!-- <div class="skill-icon" title="Microsoft Access">
+				<i class="fab fa-microsoft"></i>
+				<span>Access</span> -->
 
-								
-								
-							<!-- OLD MS ACCESS ICON -->
-								
-								<!-- <div class="skill-icon" title="Microsoft Access">
-								<i class="fab fa-microsoft"></i>
-								<span>Access</span> -->
+				<div class="skill-icon" title="Microsoft Access">
+				<img src="icons/access-icon1.png" alt="Access" style="width:35px; height:auto;">
+				<span>Microsoft Access</span>
 
 
-								<div class="skill-icon" title="Microsoft Access">
-								<img src="icons/access-icon1.png" alt="Access" style="width:35px; height:auto;">
-								<span>Microsoft Access</span>
 
 
+
+		<!---------- Development & Automation ---------->	
+				<h3>Development & Automation</h3>
+				<div class="skill-icons">
+
+
+			<!-- VS Code Icon -->
+				<!-- Old VS Code Icon -->
+				<!-- <div class="skill-icon" title="VS Code">
+				<i class="fas fa-code"></i>
+				<span>VS Code</span>
+				</div> -->
+
+				<div class="skill-icon" title="VS Code">
+				<img src="icons/vs-icon.png" alt="VS Code" style="width:32px; height:auto;">
+				<span>VS Code</span>
+				</div>
+
+					
+			<!-- RPA / UiPath Icon -->
+				<!-- Old RPA Tools / Ui Path Icon -->
+				<!-- <div class="skill-icon" title="RPA">
+				<i class="fas fa-robot"></i>
+				<span style="white-space: pre-wrap;">RPA Tools</span>
+				</div> -->
+
+				<!-- <div class="skill-icon" title="RPA">
+				<i class="fas fa-robot"></i>
+				<span>RPA</span>
+				</div> -->
+
+				<div class="skill-icon" title="UiPath">
+				<img src="images/uipath-icon.png" alt="UiPath" style="width:32px; height:auto;">
+				<span>UiPath</span>
+				</div>
+
+
+			<!-- SAP Icon -->
+				<!-- Old SAP Icon-->
+				<!-- <div class="skill-icon" title="SAP">
+				<img src="images/sap-logo.png" alt="SAP" style="width:55px; height:auto;">
+				<span style="white-space: pre-wrap;">SAP</span>
+				</div> -->
+
+				<div class="skill-icon" title="SAP">
+				<img src="images/sap-logo.png" alt="SAP" style="width:55px; height:auto;">
+				<span>SAP</span>
+				</div>
+
+
+			<!-- Visio Icon -->
+				<!-- Old Visio Icon -->
+				<!-- <div class="skill-icon" title="Visio">
+				<i class="fas fa-sitemap"></i>
+				<span>Visio</span>
+				</div> -->
+
+				<div class="skill-icon" title="Visio">
+				<img src="icons/visio-logo1.png" alt="Visio" style="width:35px; height:auto;">
+				<span>Visio</span>
+				</div>
 
 								
 							</p>
-
-
-
-
 						</article>
 
 
 
 
+
+
+
+			
 
 
 						<!-- Experience -->
