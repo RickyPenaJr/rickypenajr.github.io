@@ -134,6 +134,19 @@ Version 6.1.1 → A minor fix or improvement without adding new features
 		</script>
 		<!-- CounterAPI Script (END) -->
 
+
+
+
+		<script>
+		  const counterApiUrl = "https://countapi.dev/hit/rickypenajr.github.io/visits";
+		
+		  fetch(counterApiUrl)
+		    .then(res => res.json())
+		    .then(data => console.log("Total Visits:", data.value))
+		    .catch(err => console.error("CountAPI Error:", err));
+		</script>
+
+
 <!-------------------------------------------------------------------------------------------------->
 
 		
