@@ -82,7 +82,9 @@ Version 6.1.1 → A minor fix or improvement without adding new features
                 </div>
             </div>
 
-		
+
+
+<!-------------------------------------------------------------------------------------------------->
 		<!-- Copy Email Button / Script -->
 			<script>
 				function copyEmail() {
@@ -118,7 +120,21 @@ Version 6.1.1 → A minor fix or improvement without adding new features
 		<!-- Google Analytics Script (END)-->
 
 
+		
 
+		<!-- CounterAPI Script -->
+		<script>
+		  // Use your actual domain as namespace: "rickypenajr.github.io"
+		  const counterApiUrl = "https://api.countapi.xyz/hit/rickypenajr.github.io/visits";
+		
+		  fetch(counterApiUrl)
+		    .then(response => response.json())
+		    .then(data => console.log("Total Visits:", data.value)) // Logs visit count to console
+		    .catch(error => console.error("CounterAPI Error:", error));
+		</script>
+		<!-- CounterAPI Script (END) -->
+
+<!-------------------------------------------------------------------------------------------------->
 
 		
 
