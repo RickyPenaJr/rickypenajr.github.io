@@ -85,6 +85,7 @@ Version 6.1.1 → A minor fix or improvement without adding new features
                     <h1>Ricky Peña Jr.</h1>
 			<h3>IT Consultant • Data Analyst</h3>
 			<p><i class="fas fa-map-marker-alt"></i> Houston, TX</p>
+			<p id="centralTime" style="margin-top: -10px;"></p>
 			<button id="emailButton" onclick="copyEmail()">  
 			<i class="fas fa-envelope">
 			</i>&nbsp;Email</button>
@@ -140,16 +141,11 @@ Version 6.1.1 → A minor fix or improvement without adding new features
 		    };
 		    const formatter = new Intl.DateTimeFormat([], options);
 		    const now = new Date();
-		    const timeElement = document.getElementById('centralTime');
-		    if (timeElement) {
-		      timeElement.innerText = `Local Time: ${formatter.format(now)}`;
-		    }
+		    document.getElementById('centralTime').innerText = `Local Time: ${formatter.format(now)}`;
 		  }
 		
-		  document.addEventListener("DOMContentLoaded", function () {
-		    updateCentralTime();
-		    setInterval(updateCentralTime, 1000);
-		  });
+		  updateCentralTime();
+		  setInterval(updateCentralTime, 1000); // updates every second
 		</script>
 		<!-- Clock Script (END)-->
 <!-------------------------------------------------------------------------------------------------->
@@ -175,13 +171,6 @@ Version 6.1.1 → A minor fix or improvement without adding new features
                     <li><a href="https://github.com/rickypenajr" target="_blank" class="icon brands fa-github"></a></li>
                     <!-- <li><a href="linkhere" target="_blank" class="icon fa-gem"></a></li> -->
                 </ul>
-		    
-			<!-- Central Time Zone Clock -->
-			<div style="text-align: center; margin-top: 10px;">
-			  <p id="centralTime" class="time-display">Local Time: Loading…</p>
-			</div>
-		    	<!-- Central Time Zone Clock (END)-->
-
 	    </div>
         </header>
 
