@@ -130,21 +130,26 @@ Version 6.1.1 → A minor fix or improvement without adding new features
 
 		<!-- Clock Script -->
 		<script>
-  		function updateCentralTime() {
-    		const options = {
-      		timeZone: 'America/Chicago',
-      		hour: '2-digit',
-      		minute: '2-digit',
-      		second: '2-digit',
-      		hour12: true
-    		};
-    		const formatter = new Intl.DateTimeFormat([], options);
-    		const now = new Date();
-    		document.getElementById('centralTime').innerText = `Local Time: ${formatter.format(now)}`;
-  		}
-
-  		updateCentralTime();
-  		setInterval(updateCentralTime, 1000); // updates every second
+		  function updateCentralTime() {
+		    const options = {
+		      timeZone: 'America/Chicago',
+		      hour: '2-digit',
+		      minute: '2-digit',
+		      second: '2-digit',
+		      hour12: true
+		    };
+		    const formatter = new Intl.DateTimeFormat([], options);
+		    const now = new Date();
+		    const centralTimeElement = document.getElementById("centralTime");
+		    if (centralTimeElement) {
+		      centralTimeElement.textContent = "Local Time: " + formatter.format(now);
+		    }
+		  }
+		
+		  document.addEventListener("DOMContentLoaded", function() {
+		    updateCentralTime();
+		    setInterval(updateCentralTime, 1000);
+		  });
 		</script>
 		<!-- Clock Script (END)-->
 <!-------------------------------------------------------------------------------------------------->
@@ -170,8 +175,11 @@ Version 6.1.1 → A minor fix or improvement without adding new features
                     <li><a href="https://github.com/rickypenajr" target="_blank" class="icon brands fa-github"></a></li>
                     <!-- <li><a href="linkhere" target="_blank" class="icon fa-gem"></a></li> -->
                 </ul>
-		    <p id="centralTime" style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #fff;"></p>
-            </div>
+  				 <!-- Central Time Display -->
+   					 <div style="text-align: center; margin-top: 10px;">
+       					 <p id="centralTime" style="font-size: 0.9em; color: white;">Local Time: Loading...</p>
+    					</div>            
+	    </div>
         </header>
 
 		
