@@ -124,27 +124,6 @@ Version 6.1.1 → A minor fix or improvement without adding new features
 			  gtag('config', 'G-LEK1T18ZWF');
 			</script>
 		<!-- Google Analytics Script (END)-->
-
-		
-		<!-- Clock Script -->
-		<script>
-		  function updateCentralTime() {
-		    const options = {
-		      timeZone: 'America/Chicago',
-		      hour: '2-digit',
-		      minute: '2-digit',
-		      second: '2-digit',
-		      hour12: true
-		    };
-		    const formatter = new Intl.DateTimeFormat([], options);
-		    const now = new Date();
-		    document.getElementById('centralTime').innerText = `Local Time: ${formatter.format(now)}`;
-		  }
-		
-		  updateCentralTime();
-		  setInterval(updateCentralTime, 1000); // updates every second
-		</script>
-		<!-- Clock Script (END) -->
 <!-------------------------------------------------------------------------------------------------->
 
             <nav>		    
@@ -1458,6 +1437,26 @@ Version 6.1.1 → A minor fix or improvement without adding new features
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+	  		<!-- Clock Script -->
+		<script>
+		  function updateCentralTime() {
+		    const options = {
+		      timeZone: 'America/Chicago',
+		      hour: '2-digit',
+		      minute: '2-digit',
+		      second: '2-digit',
+		      hour12: true
+		    };
+		    const formatter = new Intl.DateTimeFormat([], options);
+		    const now = new Date();
+		    document.getElementById('centralTime').innerText = `Local Time: ${formatter.format(now)}`;
+		  }
+		
+		  updateCentralTime();
+		  setInterval(updateCentralTime, 1000); // updates every second
+		</script>
+		<!-- Clock Script (END) -->
 
 
 		</body>
