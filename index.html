@@ -125,27 +125,6 @@ Version 6.1.1 → A minor fix or improvement without adding new features
 			</script>
 		<!-- Google Analytics Script (END)-->
 
-
-
-		<!-- Clock Script -->
-		<script>
-		  function updateCentralTime() {
-		    const options = {
-		      timeZone: 'America/Chicago',
-		      hour: '2-digit',
-		      minute: '2-digit',
-		      second: '2-digit',
-		      hour12: true
-		    };
-		    const formatter = new Intl.DateTimeFormat([], options);
-		    const now = new Date();
-		    document.getElementById('centralTime').innerText = `Local Time: ${formatter.format(now)}`;
-		  }
-		
-		  updateCentralTime();
-		  setInterval(updateCentralTime, 1000); // updates every second
-		</script>
-		<!-- Clock Script (END)-->
 <!-------------------------------------------------------------------------------------------------->
 
             <nav>		    
@@ -169,8 +148,33 @@ Version 6.1.1 → A minor fix or improvement without adding new features
                     <li><a href="https://github.com/rickypenajr" target="_blank" class="icon brands fa-github"></a></li>
                     <!-- <li><a href="linkhere" target="_blank" class="icon fa-gem"></a></li> -->
                 </ul>
-		    +            <!-- move the clock here -->
-+            <p id="centralTime" class="time-display" style="margin-top:10px;">Local Time: Loading…</p>
+		    
+		    
+		                <!-- Clock -->
+  		<p id="centralTime" style="margin-top:10px; text-align:center;">
+    		Local Time: Loading…	
+				<!-- Clock (END) -->
+	  <!-- Clock Script -->
+		<script>
+		  function updateCentralTime() {
+		    const options = {
+		      timeZone: 'America/Chicago',
+		      hour: '2-digit',
+		      minute: '2-digit',
+		      second: '2-digit',
+		      hour12: true
+		    };
+		    const formatter = new Intl.DateTimeFormat([], options);
+		    const now = new Date();
+		    document.getElementById('centralTime').innerText = `Local Time: ${formatter.format(now)}`;
+		  }
+		
+		  updateCentralTime();
+		  setInterval(updateCentralTime, 1000); // updates every second
+		</script>
+		<!-- Clock Script (END)-->
+			
+		    
 	    </div>
         </header>
 
