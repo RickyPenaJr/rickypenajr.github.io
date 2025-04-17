@@ -1948,3 +1948,10 @@ input, select, textarea {
 		}
 		
   
+
+
+
+		#header .inner .time-display {
+  		text-align: center;
+  		margin-top: 0.5em;  
+		}
