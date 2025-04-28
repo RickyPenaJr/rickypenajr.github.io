@@ -4,7 +4,7 @@
 
 Data Science Portfolio V4 - [www.rickypenajr.github.io](https://rickypenajr.github.io/)
 <br>
-Version: 4.3.3 (Updated: April 17, 2025)
+Version: 4.3.3 (Updated: April 28, 2025)
 <br>
 <br>
 Personal portfolio site showcasing my work in data analytics, data science, and personal projects.
